@@ -1,0 +1,1 @@
+This VST3 plugging was created with HISE under an open source licence. Meaning that you can edit and compile your own pluggin in HISE with the files provided.

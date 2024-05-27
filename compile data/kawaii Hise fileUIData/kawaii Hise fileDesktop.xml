@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="Image1" x="0" y="0" fileName="E:\vsts\KAWAII\kawaii bk2.png"
+             width="240" height="400"/>
+  <Component type="ScriptSlider" id="Knob3" x="20.0" y="110.0" filmstripImage="E:\vsts\distro\PlainKnob01 - copia.png"
+             numStrips="31" width="66.0" height="66.0" isVertical="0" text=""
+             processorId="Delay1" parameterId="DelayTimeLeft" middlePosition="9.0"
+             stepSize="1.0" max="18.0" showValuePopup="Above" mode="TempoSync"/>
+  <Component type="ScriptSlider" id="Knob5" x="157.0" y="154.0" filmstripImage="E:\vsts\distro\PlainKnob01 - copia.png"
+             numStrips="31" width="66.0" height="66.0" isVertical="0" text=""
+             processorId="Delay1" parameterId="Mix" showValuePopup="Above"/>
+  <Component type="ScriptSlider" id="Knob4" x="88.0" y="110.0" filmstripImage="E:\vsts\distro\PlainKnob01 - copia.png"
+             numStrips="31" width="66.0" height="66.0" isVertical="0" text=""
+             processorId="Delay1" parameterId="DelayTimeRight" mode="TempoSync"
+             max="17.0" stepSize="1.0" middlePosition="9.0" showValuePopup="Above"/>
+  <Component type="ScriptSlider" id="Knob6" x="335.0" y="374.0" filmstripImage="E:\vsts\distro\PlainKnob01 - copia.png"
+             numStrips="6" width="66.0" height="66.0" isVertical="0" text=""/>
+  <Component type="ScriptSlider" id="Knob7" x="27.0" y="304.0" filmstripImage="E:\vsts\distro\PlainKnob01 - copia.png"
+             numStrips="31" width="66.0" height="66.0" isVertical="0" text=""
+             processorId="Simple Reverb1" parameterId="WetLevel" defaultValue="0.2000000029802322"
+             showValuePopup="Above"/>
+  <Component type="ScriptSlider" id="Knob8" x="91.0" y="304.0" filmstripImage="E:\vsts\distro\PlainKnob01 - copia.png"
+             numStrips="31" width="66.0" height="66.0" isVertical="0" text=""
+             processorId="Simple Reverb1" parameterId="RoomSize" defaultValue="0.800000011920929"
+             showValuePopup="Above"/>
+  <Component type="ScriptSlider" id="Knob9" x="21.0" y="200.0" filmstripImage="E:\vsts\distro\PlainKnob01 - copia.png"
+             numStrips="31" width="66.0" height="66.0" isVertical="0" text=""
+             processorId="Delay1" parameterId="FeedbackLeft" showValuePopup="Above"/>
+  <Component type="ScriptSlider" id="Knob10" x="87.0" y="200.0" filmstripImage="E:\vsts\distro\PlainKnob01 - copia.png"
+             numStrips="31" width="66.0" height="66.0" isVertical="0" text=""
+             processorId="Delay1" parameterId="FeedbackRight" showValuePopup="Above"/>
+</ContentProperties>

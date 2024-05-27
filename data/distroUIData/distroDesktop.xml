@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="Image1" x="0.0" y="0.0" width="200.0"
+             height="200.0" fileName="E:\vsts\distro\DISTRO (2).png"/>
+  <Component type="ScriptSlider" id="Knob1" x="47.0" y="128.0" text="" max="0.800000011920929"
+             processorId="Saturator1" parameterId="Saturation" width="66.0"
+             filmstripImage="E:\vsts\distro\PlainKnob01.png" numStrips="31.0"
+             height="66.0" isVertical="0"/>
+  <Component type="ScriptButton" id="Button1" x="70.0" y="67.0" text="" width="63.0"
+             height="63.0" filmstripImage="E:\vsts\distro\button.png" numStrips="6.0"
+             processorId="distro" parameterId="Enabled"/>
+</ContentProperties>

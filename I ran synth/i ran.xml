@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Processor Type="SynthChain" ID="i ran" Bypassed="0" Gain="1.0" Balance="0.0"
+           VoiceLimit="64.0" KillFadeTime="20.0" IconColour="0" packageName=""
+           BuildVersion="650">
+  <EditorStates BodyShown="0" Visible="1" Solo="0" OverviewFolded="0"/>
+  <ChildProcessors>
+    <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+      <EditorStates BodyShown="1" Visible="1" Solo="0"/>
+      <ChildProcessors>
+        <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0" Script="Content.makeFrontInterface(600, 600);function onNoteOn()&#10;{&#10;&#9;&#10;}&#10; function onNoteOff()&#10;{&#10;&#9;&#10;}&#10; function onController()&#10;{&#10;&#9;&#10;}&#10; function onTimer()&#10;{&#10;&#9;&#10;}&#10; function onControl(number, value)&#10;{&#10;&#9;&#10;}&#10; ">
+          <EditorStates BodyShown="1" Visible="1" Solo="0" contentShown="1" onInitOpen="1"
+                        Folded="1"/>
+          <ChildProcessors/>
+          <Content>
+            <Control type="ScriptSlider" id="Tri/saw" value="0.7099999785423279"/>
+            <Control type="ScriptSlider" id="Filter" value="3520.0"/>
+            <Control type="ScriptSlider" id="Gate" value="1.0"/>
+            <Control type="ScriptSlider" id="Reverb" value="0.3499999940395355"/>
+            <Control type="ScriptSlider" id="Saturation" value="0.6499999761581421"/>
+          </Content>
+          <UIData>
+            <ContentProperties DeviceType="Desktop">
+              <Component type="ScriptImage" id="Image1" x="-10.0" y="0.0" alpha="0.9400000000000001"
+                         fileName="E:\workshop temp\vsts\sea2.png" width="620" height="640"/>
+              <Component type="ScriptSlider" id="Tri/saw" x="140.0" y="30.0" processorId="Waveform Generator1"
+                         parameterId="Mix" width="80.0" height="80.0" bgColour="16777215"
+                         itemColour="3355443" itemColour2="1118481" textColour="4278190080"
+                         text=""/>
+              <Component type="ScriptSlider" id="Filter" x="380.0" y="30.0" max="5000.0"
+                         processorId="Filter1" parameterId="Frequency" width="80.0" height="80.0"
+                         bgColour="16777215" itemColour="3355443" itemColour2="1118481"
+                         textColour="4278190080" text=""/>
+              <Component type="ScriptSlider" id="Gate" x="260.0" y="430.0" processorId="LFO Modulator1"
+                         parameterId="Intensity" width="80.0" height="80.0" bgColour="16777215"
+                         itemColour="3355443" itemColour2="1118481" textColour="4278190080"
+                         text=""/>
+              <Component type="ScriptSlider" id="Reverb" x="140.0" y="480.0" max="0.8"
+                         processorId="Simple Reverb1" parameterId="RoomSize" width="80.0"
+                         height="80.0" bgColour="16777215" itemColour="3355443" itemColour2="1118481"
+                         textColour="4278190080" text=""/>
+              <Component type="ScriptSlider" id="Saturation" x="380.0" y="480.0" processorId="Saturator1"
+                         parameterId="Saturation" width="80.0" height="80.0" bgColour="16777215"
+                         itemColour="3355443" itemColour2="1118481" textColour="0" text=""
+                         showTextBox="0"/>
+            </ContentProperties>
+          </UIData>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1.0">
+      <EditorStates BodyShown="1" Visible="0" Solo="0"/>
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="1" Intensity="0.0">
+      <EditorStates BodyShown="1" Visible="0" Solo="0"/>
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="EffectChain" ID="FX" Bypassed="0">
+      <EditorStates BodyShown="1" Visible="0" Solo="0"/>
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="WaveSynth" ID="Waveform Generator1" Bypassed="0" Gain="0.25"
+               Balance="0.0" VoiceLimit="256.0" KillFadeTime="20.0" IconColour="0"
+               OctaveTranspose1="0.0" OctaveTranspose2="0.0" Detune1="0.0" Detune2="0.0"
+               WaveForm1="2.0" WaveForm2="3.0" Pan1="0.0" Pan2="0.0" Mix="0.7099999785423279"
+               EnableSecondOscillator="1.0" PulseWidth1="0.5" PulseWidth2="0.5"
+               HardSync="0.0">
+      <EditorStates BodyShown="1" Visible="1" Solo="0" GainModulationShown="1"/>
+      <ChildProcessors>
+        <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+          <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1.0">
+          <EditorStates BodyShown="1" Visible="1" Solo="0" Folded="0"/>
+          <ChildProcessors>
+            <Processor Type="SimpleEnvelope" ID="DefaultEnvelope1" Bypassed="0" Monophonic="0.0"
+                       Retrigger="1.0" Intensity="1.0" Attack="0.0" Release="0.0" LinearMode="1.0">
+              <EditorStates BodyShown="1" Visible="1" Solo="0" Folded="0"/>
+              <ChildProcessors>
+                <Processor Type="ModulatorChain" ID="Attack Time Modulation" Bypassed="0"
+                           Intensity="1.0">
+                  <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+                  <ChildProcessors/>
+                </Processor>
+              </ChildProcessors>
+            </Processor>
+            <Processor Type="LFO" ID="LFO Modulator1" Bypassed="0" Intensity="1.0" Frequency="8.0"
+                       FadeIn="1000.0" WaveformType="7.0" Legato="1.0" TempoSync="1.0"
+                       SmoothingTime="5.0" LoopEnabled="1.0" PhaseOffset="0.0" SyncToMasterClock="0.0"
+                       IgnoreNoteOn="0.0" CustomWaveform="" StepData="64....f+.........3O.........9C........f+.........3O.........9C........f+.........3O......">
+              <EditorStates BodyShown="1" Visible="1" Solo="0"/>
+              <ChildProcessors>
+                <Processor Type="ModulatorChain" ID="LFO Intensity Mod" Bypassed="0" Intensity="1.0">
+                  <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+                  <ChildProcessors/>
+                </Processor>
+                <Processor Type="ModulatorChain" ID="LFO Frequency Mod" Bypassed="0" Intensity="1.0">
+                  <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+                  <ChildProcessors/>
+                </Processor>
+              </ChildProcessors>
+            </Processor>
+          </ChildProcessors>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0.0">
+          <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="EffectChain" ID="FX" Bypassed="0">
+          <EditorStates BodyShown="1" Visible="1" Solo="0" Folded="0"/>
+          <ChildProcessors>
+            <Processor Type="PolyphonicFilter" ID="Filter1" Bypassed="0" Gain="0.0"
+                       Frequency="3520.0" Q="1.0" Mode="15.0" Quality="1.203982848e9"
+                       BipolarIntensity="0.0">
+              <EditorStates BodyShown="1" Visible="1" Solo="0"/>
+              <ChildProcessors>
+                <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
+                           Intensity="1.0">
+                  <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+                  <ChildProcessors/>
+                </Processor>
+                <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1.0">
+                  <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+                  <ChildProcessors/>
+                </Processor>
+                <Processor Type="ModulatorChain" ID="Bipolar Freq Modulation" Bypassed="0"
+                           Intensity="1.0">
+                  <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+                  <ChildProcessors/>
+                </Processor>
+                <Processor Type="ModulatorChain" ID="Q Modulation" Bypassed="0" Intensity="1.0">
+                  <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+                  <ChildProcessors/>
+                </Processor>
+              </ChildProcessors>
+            </Processor>
+            <Processor Type="SimpleReverb" ID="Simple Reverb1" Bypassed="0" RoomSize="0.3499999940395355"
+                       Damping="0.6000000238418579" WetLevel="0.2000000029802322" DryLevel="0.800000011920929"
+                       Width="0.800000011920929" FreezeMode="0.1000000014901161">
+              <EditorStates BodyShown="1" Visible="1" Solo="0"/>
+              <ChildProcessors/>
+              <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+            </Processor>
+            <Processor Type="Saturator" ID="Saturator1" Bypassed="0" Saturation="0.6499999761581421"
+                       WetAmount="1.0" PreGain="0.0" PostGain="0.0">
+              <EditorStates BodyShown="1" Visible="1" Solo="0"/>
+              <ChildProcessors>
+                <Processor Type="ModulatorChain" ID="Saturation Modulation" Bypassed="0"
+                           Intensity="1.0">
+                  <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+                  <ChildProcessors/>
+                </Processor>
+              </ChildProcessors>
+              <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+            </Processor>
+          </ChildProcessors>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="Mix Modulation" Bypassed="0" Intensity="1.0">
+          <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="Osc2 Pitch Modulation" Bypassed="0"
+                   Intensity="0.0">
+          <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+          <ChildProcessors/>
+        </Processor>
+      </ChildProcessors>
+      <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+    </Processor>
+    <Processor Type="WaveSynth" ID="Waveform Generator2" Bypassed="0" Gain="0.25"
+               Balance="0.0" VoiceLimit="256.0" KillFadeTime="20.0" IconColour="0"
+               OctaveTranspose1="0.0" OctaveTranspose2="0.0" Detune1="11.19999980926514"
+               Detune2="0.0" WaveForm1="3.0" WaveForm2="1.0" Pan1="0.0" Pan2="0.0"
+               Mix="0.6499999761581421" EnableSecondOscillator="1.0" PulseWidth1="0.5"
+               PulseWidth2="0.5" HardSync="0.0">
+      <EditorStates BodyShown="1" Visible="1" Solo="0" GainModulationShown="1"/>
+      <ChildProcessors>
+        <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+          <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1.0">
+          <EditorStates BodyShown="1" Visible="0" Solo="0"/>
+          <ChildProcessors>
+            <Processor Type="SimpleEnvelope" ID="DefaultEnvelope2" Bypassed="0" Monophonic="0.0"
+                       Retrigger="1.0" Intensity="1.0" Attack="5.0" Release="10.0" LinearMode="1.0">
+              <EditorStates BodyShown="1" Visible="1" Solo="0"/>
+              <ChildProcessors>
+                <Processor Type="ModulatorChain" ID="Attack Time Modulation" Bypassed="0"
+                           Intensity="1.0">
+                  <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+                  <ChildProcessors/>
+                </Processor>
+              </ChildProcessors>
+            </Processor>
+          </ChildProcessors>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="0" Intensity="0.0">
+          <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="EffectChain" ID="FX" Bypassed="0">
+          <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="0"/>
+          <ChildProcessors>
+            <Processor Type="CurveEq" ID="Parametriq EQ1" Bypassed="0" NumFilters="1"
+                       Band0="1.820690155029297" Band1="1658.700927734375" Band2="1.0"
+                       Band3="1.0" Band4="0.0" FFTEnabled="0">
+              <EditorStates BodyShown="1" Visible="1" Solo="0"/>
+              <ChildProcessors/>
+              <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+            </Processor>
+          </ChildProcessors>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="Mix Modulation" Bypassed="0" Intensity="1.0">
+          <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+          <ChildProcessors/>
+        </Processor>
+        <Processor Type="ModulatorChain" ID="Osc2 Pitch Modulation" Bypassed="0"
+                   Intensity="0.0">
+          <EditorStates BodyShown="1" Visible="0" Solo="0" Folded="1"/>
+          <ChildProcessors/>
+        </Processor>
+      </ChildProcessors>
+      <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+    </Processor>
+  </ChildProcessors>
+  <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+  <macro_controls>
+    <macro name="Macro 1" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 2" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 3" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 4" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 5" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 6" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 7" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 8" value="0.0" midi_cc="-1"/>
+  </macro_controls>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Processor>
